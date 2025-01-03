@@ -115,7 +115,7 @@ function getGameDownloads($appId) {
     $downloads = [];
     $sourceFiles = glob(GAME_SOURCES_PATH . '/*.json');
     
-    $steamApiUrl = "https://store.steampowered.com/api/appdetails?appids={$appId}&l=portuguese&cc=BR";
+    $steamApiUrl = "https://store.steampowered.com/api/appdetails?appids={$appId}&l=english&cc=US";
     $response = file_get_contents($steamApiUrl);
     $data = json_decode($response, true);
     
@@ -123,30 +123,31 @@ function getGameDownloads($appId) {
         return $downloads;
     }
     
-    $gameName = strtolower($data[$appId]['data']['name']);
+    // Pega o nome em inglês e remove caracteres especiais
+    $gameName = preg_replace('/[^\p{L}\p{N}\s]/u', '', strtolower($data[$appId]['data']['name']));
     
     foreach ($sourceFiles as $file) {
         if (basename($file) === 'catalogue.json') continue;
         
         $sourceData = json_decode(file_get_contents($file), true);
-        
-        // Usa o nome definido no JSON em vez do nome do arquivo
         $sourceName = $sourceData['name'] ?? basename($file, '.json');
         
         if (isset($sourceData['downloads'])) {
             foreach ($sourceData['downloads'] as $download) {
-                if (isset($download['title']) && 
-                    stripos(strtolower($download['title']), $gameName) !== false) {
-                    
-                    // Limpa o título e extrai a versão
-                    $version = cleanGameTitle($download['title'], $gameName);
+                if (!isset($download['title'])) continue;
+                
+                // Remove caracteres especiais do título do download
+                $downloadTitle = preg_replace('/[^\p{L}\p{N}\s]/u', '', strtolower($download['title']));
+                
+                if (stripos($downloadTitle, $gameName) !== false) {
+                    $version = cleanGameTitle($download['title'], $data[$appId]['data']['name']);
                     
                     if (!isset($downloads[$version])) {
                         $downloads[$version] = [];
                     }
                     
                     $downloads[$version][] = [
-                        'source' => $sourceName, // Agora usa o nome original do JSON
+                        'source' => $sourceName,
                         'uris' => $download['uris'],
                         'fileSize' => $download['fileSize'] ?? null,
                         'version' => $download['version'] ?? null
