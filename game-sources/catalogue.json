@@ -1,0 +1,168 @@
+{
+    "games": [
+        {
+            "id": 1245620,
+            "name": "Elden Ring",
+            "description": "Um novo RPG de ação e fantasia.",
+            "releaseDate": "2022-02-25",
+            "publisher": "Bandai Namco",
+            "developers": [
+                "FromSoftware"
+            ]
+        },
+        {
+            "id": 2622380,
+            "name": "ELDEN RING NIGHTREIGN",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 2778580,
+            "name": "ELDEN RING Shadow of the Erdtree",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 2778590,
+            "name": "ELDEN RING Shadow of the Erdtree Premium Bundle",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 489830,
+            "name": "The Elder Scrolls V: Skyrim Special Edition",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 1172620,
+            "name": "Sea of Thieves: 2024 Edition",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 814380,
+            "name": "Sekiro™: Shadows Die Twice - GOTY Edition",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 495420,
+            "name": "State of Decay 2: Juggernaut Edition",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 1250410,
+            "name": "Microsoft Flight Simulator 40th Anniversary Edition",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 813780,
+            "name": "Age of Empires II: Definitive Edition",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 1547000,
+            "name": "Grand Theft Auto: San Andreas – The Definitive Edition",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 534380,
+            "name": "Dying Light 2 Stay Human: Reloaded Edition",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 2420110,
+            "name": " Horizon Forbidden West™ Edição Completa",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 1466860,
+            "name": "Age of Empires IV: Anniversary Edition",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 1174180,
+            "name": "Red Dead Redemption 2",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 2668510,
+            "name": "Red Dead Redemption",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 1404210,
+            "name": "Red Dead Online",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 2753270,
+            "name": "Deadrock Redemption",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 541720,
+            "name": "Redrum: Dead Diary",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 2767510,
+            "name": "Dead Red Bennie",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 503130,
+            "name": "Red is Dead - The Complex Fun Random Level Fast Strategy Game",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 2154680,
+            "name": "Redmatch 2 - Dead of Night Bundle",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        },
+        {
+            "id": 910380,
+            "name": "Red and the Deadly Sins",
+            "publisher": "",
+            "releaseDate": "",
+            "description": ""
+        }
+    ]
+}
